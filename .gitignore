@@ -1,0 +1,5 @@
+*.ipa
+*.xml
+LoanCalc.xcodeproj/xcuserdata/
+LoanCalc.xcodeproj/project.xcworkspace/
+Payload/
