@@ -66,6 +66,11 @@ class LoanCalcUITests: XCTestCase {
         tfFees.tap()
         tfFees.typeText("300")
         
+        let screenshot = app.windows.firstMatch.screenshot()
+        let attachment = XCTAttachment(screenshot: screenshot)
+        attachment.lifetime = .keepAlways
+        add(attachment)
+        
         let currencyFormatter = getCurrencyFormatter()
         
         let lblMonthlyPayment = app.staticTexts["lblMonthlyPayment"]
