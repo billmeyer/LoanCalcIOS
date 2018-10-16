@@ -39,7 +39,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     required init?(coder aDecoder: NSCoder) {
         formatter = NumberFormatter()
+        // localize to your grouping and decimal separator
+        formatter.usesGroupingSeparator = true
         formatter.numberStyle = .currency
+        formatter.locale = Locale.current
+        
         super.init(coder: aDecoder)
     }
     
